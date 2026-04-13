@@ -4,8 +4,7 @@ font-family:Arial;
 background:#f3f3f3;
 }
 
-
-
+/* NAVBAR */
 .navbar{
 display:flex;
 justify-content:space-between;
@@ -14,6 +13,7 @@ background:#131921;
 color:white;
 padding:10px 20px;
 flex-wrap:wrap;
+gap:10px;
 }
 
 .logo-img{
@@ -23,31 +23,35 @@ width:90px;
 .search{
 display:flex;
 flex:1;
-max-width:400px;
-margin:10px;
+max-width:500px;
 }
 
 .search input{
-padding:8px;
+padding:10px;
 flex:1;
 border:none;
 outline:none;
 }
 
 .search button{
-padding:8px 12px;
+padding:10px;
 background:#febd69;
 border:none;
 cursor:pointer;
 }
 
+.nav{
+display:flex;
+gap:15px;
+}
+
 .nav a{
 color:white;
-margin-left:15px;
 text-decoration:none;
 font-size:14px;
 }
 
+/* MENU */
 .menu{
 background:#232f3e;
 padding:10px;
@@ -63,19 +67,15 @@ font-size:14px;
 }
 
 /* HERO */
-
 .hero{
-background:url("amazon.jpg");
-background-size:cover;
-background-position:center;
+background:url("amazon.jpg") center/cover no-repeat;
 height:300px;
 }
 
 /* PRODUCTS */
-
 .products{
 display:grid;
-grid-template-columns:repeat(4,1fr);
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 gap:20px;
 padding:30px;
 }
@@ -137,8 +137,11 @@ border-radius:4px;
 margin-top:10px;
 }
 
-/* SIGN IN BOX */
+.card button:hover{
+background:#f3a847;
+}
 
+/* SIGNIN */
 .signin-box{
 background:white;
 text-align:center;
@@ -148,7 +151,6 @@ border-radius:6px;
 }
 
 /* FOOTER */
-
 .back-top{
 display:block;
 background:#37475a;
@@ -190,8 +192,7 @@ width:90px;
 margin-bottom:10px;
 }
 
-/* MOBILE RESPONSIVE */
-
+/* RESPONSIVE */
 @media (max-width:768px){
 
 .products{
@@ -199,9 +200,8 @@ grid-template-columns:repeat(2,1fr);
 }
 
 .nav{
-display:flex;
-justify-content:space-around;
 width:100%;
+justify-content:space-around;
 }
 
 }
