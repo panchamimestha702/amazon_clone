@@ -13,36 +13,33 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 <header>
 
+<!-- ✅ UPDATED NAVBAR -->
 <div class="navbar">
 
-<!-- LOGO -->
-<img src="amazon.png" class="logo-img">
+    <div class="nav-left">
+        <img src="amazon.png" class="logo-img">
+    </div>
 
-<!-- SEARCH -->
-<div class="search">
+    <div class="search">
+        <select class="category">
+            <option>All</option>
+            <option>Electronics</option>
+            <option>Fashion</option>
+            <option>Home</option>
+        </select>
+        <input type="text" placeholder="Search Amazon.in">
+        <button><i class="fa fa-search"></i></button>
+    </div>
 
-<select class="category">
-<option>All</option>
-<option>Alexa Skills</option>
-<option>Amazon Devices</option>
-<option>Fashion</option>
-<option>Electronics</option>
-</select>
-
-<input type="text" placeholder="Search Amazon.in">
-<button><i class="fa fa-search"></i></button>
-
-</div>
-
-<!-- NAV LINKS -->
-<div class="nav">
-<a href="#"><i class="fa fa-user"></i> Account</a>
-<a href="#"><i class="fa fa-box"></i> Orders</a>
-<a href="#"><i class="fa fa-shopping-cart"></i> Cart</a>
-</div>
+    <div class="nav-right">
+        <a href="#"><i class="fa fa-user"></i><span> Account</span></a>
+        <a href="#"><i class="fa fa-box"></i><span> Orders</span></a>
+        <a href="#"><i class="fa fa-shopping-cart"></i><span> Cart</span></a>
+    </div>
 
 </div>
 
+<!-- MENU -->
 <div class="menu">
 <a href="#"><i class="fa fa-bars"></i> All</a>
 <a href="#">Mobiles</a>
