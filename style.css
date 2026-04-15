@@ -4,7 +4,7 @@ font-family:Arial;
 background:#f3f3f3;
 }
 
-/* NAVBAR FIXED */
+
 .navbar{
 display:flex;
 justify-content:space-between;
@@ -68,7 +68,7 @@ padding:5px;
 border:1px solid white;
 }
 
-/* KEEP REST SAME (no changes below) */
+
 
 .menu{
 background:#232f3e;
